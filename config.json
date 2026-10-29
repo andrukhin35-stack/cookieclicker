@@ -1,0 +1,47 @@
+{
+  "model": "runs/detect/cookie_detector/weights/best.onnx",
+  "classes": [
+    "game",
+    "upgrade",
+    "advertising"
+  ],
+  "class_actions": {
+    "game": "game",
+    "upgrade": "upgrade",
+    "advertising": "close_ad"
+  },
+  "input_size": 640,
+  "iou_threshold": 0.45,
+  "confidence": {
+    "game": 0.8,
+    "upgrade": 0.25,
+    "advertising": 0.8
+  },
+  "cooldowns": {
+    "game": 0.0,
+    "close_ad": 0.5,
+    "upgrade": 0.15
+  },
+  "startup_delay": 3.0,
+  "loop_interval": 0.005,
+  "ad_settle_seconds": 0.3,
+  "max_inference_age": 1.5,
+  "require_game_for_upgrades": true,
+  "region": null,
+  "ad_auto_close": true,
+  "shopping": {
+    "enabled": true,
+    "region": null,
+    "price_column": [
+      0.15,
+      0.72
+    ],
+    "bottom_fraction": 0.9,
+    "ocr_confidence": 0.8,
+    "settle_seconds": 0.12,
+    "failed_retry_seconds": 1.5
+  },
+  "clicks_per_second": 250,
+  "target_ttl": 0.5,
+  "analysis_interval": 0.25
+}

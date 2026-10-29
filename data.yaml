@@ -1,0 +1,6 @@
+path: ./
+train: images/train
+val: images/val
+
+nc: 3
+names: ['game', 'upgrade', 'advertising']
